@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="output.css">
+    <title>Document</title>
+    <style>
+        .error{
+            color: red;
+            font-size: 12px;
+        }
+        .loading{
+            color: yellow;
+            font-size: 16px;
+        }
+        .font-bold{
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center bg-purple-100  ">
+    <div class="flex flex-row items-center justify-center  mt-[10vh] w-[70%]  mx-auto ">
+        <input type="text" id="getword" placeholder="word" class="border-b-3  border-purple-500 ">
+        <button id="search" class="bg-purple-400  py-[5px] px-[15px] rounded-[5px] borde text-white font-bold ">Search</button>
+
+    </div>
+    <div class="display  flex flex-col items-left  justify-center w-[90%] " id="display"></div>
+    <!-- <footer class="bg-purple-400 w-full h-[10vh] justify-e "></footer> -->
+    <script src="myapi.js"></script>
+</body>
+</html>
